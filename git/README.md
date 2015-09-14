@@ -72,6 +72,15 @@ We use two repository hosts, a local server running
 [GitHub Documentation]
 (git-host-github.md)
 
+## Helpful GUI Clients
+
+While comfort with the command line is essential for git, 
+there are some useful GUI applications that allow for easier visualization
+of branches and changes. 
+
+* [GitHub Application](https://desktop.github.com/) - Cross Platform, GitHub Focused
+* [GitX-dev](http://rowanj.github.io/gitx/) - OSX Client
+
 ## Other Documentation
 
 [Generate a SSH Key Pair for Authentication](ssh-generate-key-pair.md)
