@@ -1,36 +1,30 @@
 # git.bellevuecollege.edu
 
-This documentation contains information for working with the git repository host
-git.bellevuecollege.edu.
+This documentation contains information for working with the git repository host `git.bellevuecollege.edu`.
 
 This repository host runs [Gitolite](http://gitolite.com/gitolite/).
 
 ## Request Access
 
-This host uses ssh public / private key authentication. If you have not done so
-already you must generate this key pair. See
-[Generate a SSH Key Pair for Authentication](ssh-generate-key-pair.md) for more
-information.
+This host uses ssh public / private key authentication. If you have not done so already you must generate this key pair. See
+[Generate a SSH Key Pair for Authentication](ssh-generate-key-pair.md) for more information.
 
-To request access to this repository host send the contents of your public key
-file to one or more of the following administrators.
+To request access to this repository host send the contents of your public key file to one or more of the following administrators.
 
-* [Jonathan Windle](mailto:jonathan.windle@bellevuecollege.edu)
+* [Nicole Swan](mailto:nicole.swan@bellevuecollege.edu)
+* [Terrence Adams](mailto:terrence.adams@bellevuecollege.edu)
 
-**Note:** If you accidentally send your private key file you will be requested
-to generate a new key pair starting the process all over again. Don't do this.
+**Note:** If you accidentally send your private key file you will be requested to generate a new key pair starting the process all over again. Don't do this.
 
 ## List Repositories
 
-To get a list of all the repositories your account has access to run the
-following command.
+To get a list of all the repositories your account has access to run the following command.
 
 ```
 ssh git@git.bellevuecollege.edu
 ```
 
-**Note:** This can also be used to test if your key pair is working with the
-host.
+**Note:** This can also be used to test if your key pair is working with the host.
 
 ## Cloning Repositories
 
