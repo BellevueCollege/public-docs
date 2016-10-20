@@ -6,15 +6,15 @@ This repository host runs [Gitolite](http://gitolite.com/gitolite/).
 
 ## Request Access
 
-This host uses ssh public / private key authentication. If you have not done so already you must generate this key pair. See
+This host uses ssh public/private key authentication. If you have not done so already you must generate this key pair. See
 [Generate a SSH Key Pair for Authentication](ssh-generate-key-pair.md) for more information.
 
-To request access to this repository host send the contents of your public key file to one or more of the following administrators.
+To request access to this repository host send the contents of your *public* key file to one or more of the following administrators.
 
 * [Nicole Swan](mailto:nicole.swan@bellevuecollege.edu)
 * [Terrence Adams](mailto:terrence.adams@bellevuecollege.edu)
 
-**Note:** If you accidentally send your private key file you will be requested to generate a new key pair starting the process all over again. Don't do this.
+**Note:** Send the *public* key only. If you accidentally send your private key file you will be requested to generate a new key pair starting the process all over again. Don't do this.
 
 ## List Repositories
 
