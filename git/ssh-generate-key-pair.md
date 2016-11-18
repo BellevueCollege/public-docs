@@ -64,6 +64,17 @@ These files can also be transferred to **.ssh/** folders of other computers and
 operating system platforms. It is however a security best practice to generate
 a unique key pair for each system that you authenticate from.
 
+## Connecting to GitHub
+To authenticate with GitHub, you will need to register your public key 
+(contained in **id_rsa.pub** ) with your GitHub user account.
+
+1. Copy your public key to the clipboard 
+   * **Mac:** `pbcopy < ~/.ssh/id_rsa.pub`
+   * **Linux/Windows:** `cat ~/.ssh/id_rsa.pub` then select and copy output
+2. Select your user account image, and then **Settings**
+3. Select **SSH and GPG keys**
+4. Create new SSH Key and paste in your public key
+
 ## Using Different Key Pairs for Different Hosts
 
 **TODO:** Write this section.
