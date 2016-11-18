@@ -15,11 +15,9 @@ about git there are many good online resources, a few of which are listed below.
 Git supports multiple platforms. Downloads and be found from the [official
 website](https://git-scm.com/).
 
-[Windows Installation](git-installation-windows.md)
-
-**TODO:** [OS X Installation](git-installation-osx.md)
-
-**TODO:** [Linux Installation](git-installation-linux.md)
+* [Windows Installation](git-installation-windows.md)
+* [OS X Installation](git-installation-osx.md)
+* **TODO:** [Linux Installation](git-installation-linux.md)
 
 ## Setting Author Information
 
