@@ -108,3 +108,14 @@ git push origin dev
 git push origin master
 git push origin refs/tags/v2.5.1
 ~~~~
+
+## Step 9: Mark tag as GitHub Release (optional)
+
+While tags will display as releases in GitHub, doing an official GitHub release will better display release information, and allow for easier access to release files.
+
+1. Visit GitHub repository, select 'Releases', and select 'Draft new release'
+2. In the 'Tag version' dropdown, select the tag created in Step 5, on the Master branch.
+3. In the Release Title, add your tag name (aka 'v2.5')
+4. In the Release Description, place the release notes (contents of the tag you created in Step 5)
+5. If your application has a compiled form neccessary for install, you can upload it under 'Attach Binaries'
+6. Publish Release
