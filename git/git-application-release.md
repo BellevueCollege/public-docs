@@ -53,6 +53,12 @@ Make sure to commit your changes to the release branch. A *git status* check sho
 
 **Note for .NET applications:** Again, because of the nature of local .NET application development environments, a git status may not be clean (i.e. you may have an altered web.config that shouldn't be committed, but you don't want to lose changes to).
 
+**Note for projects that use Compass:** Step 3 is the perfect time to compile your Sass/SCSS stylesheets for production. The following command in Compass will output your stylesheets in compressed form:
+
+~~~
+compass compile --output-style compressed --force
+~~~
+
 ## Step 4: Merge the release branch with master branch
 Now that you got your release branch completed it's time to merge those changes back with *master* so the *master* branch stays current with the latest release.
 
@@ -108,3 +114,14 @@ git push origin dev
 git push origin master
 git push origin refs/tags/v2.5
 ~~~~
+
+## Step 9: Mark tag as GitHub Release (optional)
+While tags will display as releases in GitHub, doing an official GitHub release will
+better display release information, and allow for easier access to release files.
+
+1. Visit GitHub repository, select 'Releases', and select 'Draft new release'
+2. In the 'Tag version' dropdown, select the tag created in Step 5, on the Master branch.
+3. In the Release Title, add your tag name (aka 'v2.5')
+4. In the Release Description, place the release notes (contents of the tag you created in Step 5)
+5. If your application has a compiled form neccessary for install, you can upload it under 'Attach Binaries'
+6. Publish Release
