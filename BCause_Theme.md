@@ -4,23 +4,23 @@
 
 - [Project Plan](#project-plan)
   - [Statement of need](#statement-of-need)
-    - [Problem](#problem)
-    - [Goal](#goal)
-  - [Statement of intent](#statement-of-intent)
-    - [Title](#title)
-    - [Stakeholders](#stakeholders)
-    - [Expected scope/scale/size](#expected-scopescalesize)
-  - [Current status](#current-status)
-    - [Requirements](#requirements)
-    - [Roadmap](#roadmap)
-  - [Vision/Goal](#visiongoal)
+  - [Problem](#problem)
+  - [Goal](#goal)
+- [Statement of intent](#statement-of-intent)
+  - [Title](#title)
+  - [Stakeholders](#stakeholders)
+  - [Expected scope/scale/size](#expected-scopescalesize)
+- [Current status](#current-status)
   - [Requirements](#requirements)
-    - [Design needs](#design-needs)
-    - [Column options](#column-options)
-    - [Navigation options](#navigation-options)
-    - [Page Templates](#page-templates)
-    - [Aside](#aside)
-    - [Widget areas:](#widget-areas)
+  - [Roadmap](#roadmap)
+- [Vision/Goal](#visiongoal)
+- [Requirements](#requirements)
+  - [Design needs](#design-needs)
+  - [Column options](#column-options)
+  - [Navigation options](#navigation-options)
+  - [Page Templates](#page-templates)
+  - [Aside](#aside)
+  - [Widget areas:](#widget-areas)
 - [Commons / StudentWeb Thenes](#commons--studentweb-thenes)
 - [Technical Requirements for Theme](#technical-requirements-for-theme)
 - [Plugins - Home Grown](#plugins---home-grown)
@@ -283,7 +283,7 @@ These could be achieved via multiple plugins, but could be one plugin
 * Disclaimer
 
 <span id="functionality"></span>
-## Functionality (may be done via plugins in [Studentweb](https://wikiwiki.bellevuecollege.edu/wiki/Studentweb) and [Sites+](https://wikiwiki.bellevuecollege.edu/wiki/Sites%2B)/[Commons](https://wikiwiki.bellevuecollege.edu/wiki/Commons)
+## Functionality (may be done via plugins in [Studentweb](https://wikiwiki.bellevuecollege.edu/wiki/Studentweb) and [Sites+](https://wikiwiki.bellevuecollege.edu/wiki/Sites%2B)/[Commons](Commons.md)
 
 <span id="potential-functionality-built-into-theme"></span>
 #### Potential functionality built into theme
