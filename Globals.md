@@ -32,8 +32,10 @@
 <span id="stakeholders"></span>
 #### Stakeholders
 
+
 <span id="expected-scopescalesize"></span>
 #### Expected scope/scale/size
+
 
 <span id="current-status"></span>
 ## Current status
