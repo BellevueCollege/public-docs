@@ -7,7 +7,7 @@
 - [Statement of intent](#statement-of-intent)
   - [Title](#title)
   - [Stakeholders](#stakeholders)
-  - [Expected scope/scale/size](#expected)
+  - [Expected scope/scale/size](#expected-scope-scale-size)
 - [Current status](#current-status)
 - [Requirements](#requirements)
 - [Roadmap](#roadmap)
@@ -38,7 +38,7 @@ SBCTC Common Data Architecture (CDA)
 
 SBCTC CTC – primarily BC, Everett, Lower Columbia College, Walla, Clark, Spokane BC SMEs
 
-<span id="expected"></span>
+<span id="expected-scope-scale-size"></span>
 #### Expected scope/scale/size
 
 This is a multi-college project driven by the upcoming ERP project and will take years to completion.
