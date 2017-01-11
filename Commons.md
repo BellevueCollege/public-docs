@@ -16,7 +16,7 @@ Created in conjunction with Faculty Commons as a place for Bellevue College empl
   - [CAS Authentcation](#cas-authentication)
   - [Site Themes](#site-themes)
   - [Root Site](#root-site)
-  - [Disclaimer]#disclaimer()
+  - [Disclaimer](#disclaimer)
   - [Public Documentation](#public-documentation)
 - [Roadmap](#roadmap)
 
