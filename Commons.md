@@ -51,7 +51,7 @@ Created in conjunction with Faculty Commons as a place for Bellevue College empl
 #### CAS Authentication
 
 <span id="disclaimer"></span>
-#### 
+##### Disclaimer
 Users can log in using CAS. If they don't have an account, the account is created automatically using LDAP
 
 * CAS w LDAP plugin used to allow employees to log in using NetID and create account in WP automatically

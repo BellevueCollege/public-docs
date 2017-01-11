@@ -30,7 +30,7 @@
     - [Misc. other settings](#misc-other-settings)
   - [Development](#development)
     - [Initial setup](#initial-setup)
-    - [Application architecture/design](#application-architecture-design)
+    - [Application architecture/design](#application)
       - [Home Page Layout](#home-page-layout)
       - [YRQ Logic](#yrq-logic)
       - [Routes](#routes)
@@ -214,7 +214,7 @@ The Class Schedule project contains a folder called "globals", but when executin
 Because the Class Schedule project was developed in collaboration with another college, it is necessary to maintain certain configuration settings separately from the source control repository (which is shared). Download [ClassScheduleWorkstationConfigSettings.zip](https://go.mybcc.net/ir/devcom/projects/schedule/Implementation/ClassScheduleWorkstationConfigSettings.zip) (requires <span style="color: red">[NetID](https://wikiwiki.bellevuecollege.edu/index.php?title=NetID&action=edit&redlink=1) login)</span> and unzip the contents into your project folder - alongside the Web.config file.
 If you add settings to these files, upload the new versions back to the [Implementation Document Library](https://go.mybcc.net/ir/devcom/projects/schedule/Implementation/).
 
-<span id="application-architecture-design"></span>
+<span id="application"></span>
 #### Application architecture/design 
 
 This project uses the MCV framework and the Bellevue College "Globals" style set
