@@ -91,5 +91,6 @@ Dates to pay attention to for content updates
 ##### June
 
 * 
+
 <span id="people-involved"></span>
 ### People involved
