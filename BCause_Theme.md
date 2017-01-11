@@ -283,7 +283,8 @@ These could be achieved via multiple plugins, but could be one plugin
 * Disclaimer
 
 <span id="functionality"></span>
-## Functionality (may be done via plugins in [Studentweb](https://wikiwiki.bellevuecollege.edu/wiki/Studentweb) and [Sites+](https://wikiwiki.bellevuecollege.edu/wiki/Sites%2B)/[Commons](Commons.md))
+## Functionality 
+### (may be done via plugins in [Studentweb](https://wikiwiki.bellevuecollege.edu/wiki/Studentweb) and [Sites+](https://wikiwiki.bellevuecollege.edu/wiki/Sites%2B)/[Commons](Commons.md))
 
 <span id="potential-functionality-built-into-theme"></span>
 #### Potential functionality built into theme
