@@ -7,7 +7,7 @@
 - [Statement of intent](#statement-of-intent)
   - [Title](#title)
   - [Stakeholders](#stakeholders)
-  - [Expected scope scale size](#expected)
+  - [Expected scope/scale/size](#expected)
 - [Current status](#current-status)
 - [Requirements](#requirements)
 - [Roadmap](#roadmap)
