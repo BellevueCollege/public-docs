@@ -278,6 +278,7 @@ After this point the ClassController and ClassSchedulerExporter pass the results
 
 The SearchController first trims the result set down to 40 items (this is a page limit hardcoded in the class, const int ITEMS_PER_PAGE = 40;). Then the SearchController passes the trimmed result set to the GroupSectionsIntoBlocks() routine. This may result in unexpected grouping if we don't make sure the order by is the same in both the GetSectionsWithSeats() and GroupSectionsIntoBlocks()
 
+<span id="classesyearquarter"></span>
 #### /classes/YearQuarter
 
 
@@ -294,6 +295,7 @@ The SearchController first trims the result set down to 40 items (this is a page
 * ##### <span style="color: gold">YELLOW</span><span style="font-weight: normal">: Views/Shared/a_to_z.cshtml</span>
 * ##### <span style="color: magenta">PINK</span><span style="font-weight: normal">: Views/Shared/subjectList.cshtml</span>
 
+<span id="classesapiexportyearquarter"></span>
 #### /classes/Api/Export/YearQuarter
 
 #### Ex: <span style="font-weight: normal">http://bellevuecollege.edu/classes/Api/Export/B234</span>
@@ -307,6 +309,7 @@ The Class Schedule allows Section data for any quarter to be output to a downloa
 
 <br />
 
+<span id="search-catalog"></span>
 #### Search Catalog
 ---
 
@@ -416,7 +419,7 @@ Below is a legend defining each tag or special marker used to define data in the
 <br />
 
 <span id="troubleshooting"></span>
-#### References
+#### Troubleshooting
 ---
 
 <span id="____-classes-are-missing"></span>
