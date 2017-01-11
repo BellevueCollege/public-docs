@@ -15,6 +15,7 @@
 The NetApp FAS6210 system is a High Availability (HA) pair of storage controllers that will eventually be used to address a majority of the college's storage needs. At this time the NetApp FAS6210 system has not been fully implemented, and is still being documented, and configured.
 
 <span id="question-and-recommendation"></span>
+
 ## Questions and Recommendations
 
 <span id="ha-configuration"></span>
@@ -51,6 +52,7 @@ Recommend removing trunk configuration for the e0a and e0b interfaces and making
 Jonathan Windle 15:08, 14 August 2012 (PDT)
 
 <span id="storage-configuration"></span>
+
 ##### Storage Configuration
 It appears to me that currently the total available disks have been split in half between the two storage controllers creating four total disk pools (or as NetApp calls them "Aggreggates). This seems to me to add management overhead and complexity as I assume that we must manually decide which controller/disk-pool to host individual LUNs/Shares/Exports on.
 
@@ -65,6 +67,7 @@ There are many benefits to having storage split between the controllers that out
 
 
 <span id="e0m=port"></span>
+
 e0M Port
 The e0M port is a 100Mbit eithernet port intended for hosting management services. NetApp's network documentation eludes to the fact that this port can be disabled and services can be hosted from high speed ports. More research is needed but I'm wondering at this point if we wouldn't be better off removing the e0M port from our configuration.
 
@@ -79,6 +82,7 @@ There is no problem disabling the e0M port and not using it.
 
 
 <span id="random-error"></span>
+
 ##### Random Errors
 Tue Aug 14 11:00:00 PDT [netapp2:raid.root.unmirrored:error]: Root volume is not mirrored. A takeover of this filer may not be possible in case of a disaster.
 
