@@ -6,35 +6,35 @@
 <!-- TOC -->
 
 - [Active Directory Domain Merger>](#active-directory-domain-merger)
-                - [Contents<span id="contents"></span>](#contentsspan-idcontentsspan)
-    - [Tasks](#tasks)
-            - [Pre-Merge<span id="pre-merge"></span>](#pre-mergespan-idpre-mergespan)
-            - [During 8/24-8/26 Merge](#during-824-826-merge)
-            - [Post-Merge ASAP](#post-merge-asap)
-            - [Post-Merge](#post-merge)
-    - [Questions](#questions)
-    - [System Documentation](#system-documentation)
-            - [Seattle & Star](#seattle--star)
-            - [Application Pools](#application-pools)
-            - [Anonymous Access](#anonymous-access)
-        - [MyBC (SharePoint 2007)](#mybc-sharepoint-2007)
-            - [Audiences](#audiences)
-            - [Admin Exempt Staff](#admin-exempt-staff)
-            - [All Employees](#all-employees)
-            - [All faculty](#all-faculty)
-            - [All Students](#all-students)
-            - [Classified Staff](#classified-staff)
-            - [Deans](#deans)
-            - [Degree Audit Advisors](#degree-audit-advisors)
-            - [Ed Services Cabinet](#ed-services-cabinet)
-            - [Hourly Employees](#hourly-employees)
-            - [President's Staff](#presidents-staff)
-            - [Property Team](#property-team)
-            - [Staff with faculty view](#staff-with-faculty-view)
-            - [Staff with student view](#staff-with-student-view)
-            - [Student Employees](#student-employees)
-            - [Student Test Accounts](#student-test-accounts)
-            - [Supervisors](#supervisors)
+- [Tasks](#tasks)
+  - [Pre-Merge<span id="pre-merge"></span>](#pre-mergespan-idpre-mergespan)
+  - [During 8/24-8/26 Merge](#during-824-826-merge)
+  - [Post-Merge ASAP](#post-merge-asap)
+  - [Post-Merge](#post-merge)
+- [Questions](#questions)
+- [System Documentation](#system-documentation)
+  - [Seattle & Star](#seattle--star)
+  - [Application Pools](#application-pools)
+  - [Anonymous Access](#anonymous-access)
+- [MyBC (SharePoint 2007)](#mybc-sharepoint-2007)
+  - [Audiences](#audiences)
+    - [Admin Exempt Staff](#admin-exempt-staff)
+    - [All Employees](#all-employees)
+    - [All faculty](#all-faculty)
+    - [All Students](#all-students)
+    - [Classified Staff](#classified-staff)
+    - [Deans](#deans)
+    - [Degree Audit Advisors](#degree-audit-advisors)
+    - [Ed Services Cabinet](#ed-services-cabinet)
+    - [Hourly Employees](#hourly-employees)
+    - [President's Staff](#presidents-staff)
+    - [President's Staff Assistants](#presidents-staff-assistants)
+    - [Property Team](#property-team)
+    - [Staff with faculty view](#staff-with-faculty-view)
+    - [Staff with student view](#staff-with-student-view)
+    - [Student Employees](#student-employees)
+    - [Student Test Accounts](#student-test-accounts)
+    - [Supervisors](#supervisors)
 
 <!-- /TOC -->
 <span id="tasks"></span>
@@ -431,7 +431,8 @@ Can we delete this audience?
 | ------------------ | :------------------: | :--------------------------------: | :------------------: |
 | User | Member Of | Non-existent Membership group (cn=president's staff,ou=general distribution - security groups,ou=allgroups,dc=bellevuecollege,dc=edu) | No |
 
-===== President's Staff Assistants =====
+<span id="presidents-staff-assistants"></span>
+#### President's Staff Assistants 
 Are we using this audience?
 
 Do we need to keep this audience?
