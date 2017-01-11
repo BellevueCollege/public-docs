@@ -3,8 +3,7 @@
 ---
 
 <span id=""></span>
-- [Homesite](#homesite)
-  - [Goal/Vision](#goalvision)
+- [Goal/Vision](#goalvision)
   - [Project Status](#project-status)
 - [Important Dates to watch out for=](#important-dates-to-watch-out-for)
   - [Summer](#summer)
