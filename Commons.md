@@ -5,10 +5,8 @@
 Created in conjunction with Faculty Commons as a place for Bellevue College employees to share interests, blog, discuss and generally be in community.
 
 <span id="contents"></span>
-- [Commons](#commons)
-- [Contents](#contents)
-  - [Statement of need](#statement-of-need)
-  - [Goal](#goal)
+- [Statement of need](#statement-of-need)
+- [Goal](#goal)
 - [Statement of intent](#statement-of-intent)
   - [Title](#title)
   - [Stakeholders](#stakeholders)
