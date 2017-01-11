@@ -1,7 +1,6 @@
 <span id="bcause"></span>
 # BCause
 ---
-<!-- TOC -->
 
 - [Project Plan](#project-plan)
   - [Statement of need](#statement-of-need)
@@ -43,52 +42,6 @@
 - [Documentation Plan](#documentation-plan)
 - [Project members](#project-members)
 - [Projects this interfaces with](#projects-this-interfaces-with)
-
-<!-- /TOC -->
-<span id="contents"></span>
-
-#### Contents
-
-* Project Plan
-   * Statement of need
-   * Problem
-   * Goal
-   * Statement of intent
-   * Title
-   * Stakeholders
-   * Expected scope/scale/size
-   * Current status
-   * Requirements
-   * Roadmap
-* Vision/Goal
-* Requirements
-  * Design needs
-  * Column options
-  * Navigation options
-  * Page Templates
-  * Aside
-  * Widget areas:
-* Commons / StudentWeb Thenes
-* Technical Requirements for Theme
-* Plugins - Home Grown
-  * Official site plugin
-  *	SEO Components - for official sites
-  *	Analytics
-  * Social Media Connection plugin
-  * Student Web Club Activation plugin
-* Plugins - 3rd Party (purchase/use
-  *	Slider
-  *	Social Media
-  *	Events
-  *	Tables
-  *	Contact Forms
-* Commons/Studentweb Unique Needs
-* Functionality (may be done via plugins in Studentweb and Sites+/Commons
-  * Potential functionality built into theme
-* Performance Plugins/tools to consider
-* Documentation Plan
-* Project members
-* Projects this interfaces with
 
 <span id="project-plan"></span>
 ## Project Plan
