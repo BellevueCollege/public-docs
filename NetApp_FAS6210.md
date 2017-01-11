@@ -43,6 +43,7 @@ There is no problem configuring interfaces as one large trunk and exposing the c
 
 [Jonathan Windle](https://wikiwiki.bellevuecollege.edu/wiki/User:Jwindle) 08:11, 11 October 2012 (PDT)
 
+
 <span id="trucks"></span>
 #### Trunks
 Recommend removing trunk configuration for the e0a and e0b interfaces and making them as invisible to the configuration as possible. These are 1GBit interfaces and should probably never be used.
@@ -62,6 +63,7 @@ There are many benefits to having storage split between the controllers that out
 
 [Jonathan Windle](https://wikiwiki.bellevuecollege.edu/wiki/User:Jwindle) 08:11, 11 October 2012 (PDT)
 
+
 <span id="e0m=port"></span>
 e0M Port
 The e0M port is a 100Mbit eithernet port intended for hosting management services. NetApp's network documentation eludes to the fact that this port can be disabled and services can be hosted from high speed ports. More research is needed but I'm wondering at this point if we wouldn't be better off removing the e0M port from our configuration.
@@ -74,6 +76,7 @@ The e0M port is a 100Mbit eithernet port intended for hosting management service
 There is no problem disabling the e0M port and not using it.
 
 [Jonathan Windle](https://wikiwiki.bellevuecollege.edu/wiki/User:Jwindle) 08:11, 11 October 2012 (PDT)
+
 
 <span id="random-error"></span>
 ##### Random Errors
