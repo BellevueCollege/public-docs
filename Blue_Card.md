@@ -1,19 +1,14 @@
-<span id="blue-card"></span>
 # Blue Card
 ---
 
-<span id=""></span>
-##### Contents
 
-- [Blue Card](#blue-card)
-  - [Contents](#contents)
 - [Statement of need](#statement-of-need)
   - [Problem](#problem)
   - [Goal](#goal)
-  - [Statement of intent](#statement-of-intent)
+- [Statement of intent](#statement-of-intent)
   - [Title](#title)
   - [Stakeholders](#stakeholders)
-  - [Project Stakeholders](#project-stakeholders)
+    - [Project Stakeholders](#project-stakeholders)
   - [Size](#size)
   - [Scope](#scope)
 - [Current status](#current-status)
@@ -22,19 +17,12 @@
   - [Current Functions](#current-functions)
   - [New Functions](#new-functions)
   - [Function Details](#function-details)
-    - [a) Turn ON/OFF open enrollment](#a-turn-onoff-open-enrollment)
-    - [b) Distribute Blue Card entry codes (OPEN ENROLLMENT CLOSED)](#b-distribute-blue-card-entry-codes-open-enrollment-closed)
-    - [c) Blue Card entry code rational](#c-blue-card-entry-code-rational)
-    - [d) Email Notification](#d-email-notification)
-    - [e) SSRS Reporting](#e-ssrs-reporting)
-    - [f) Search Feature](#f-search-feature)
-    - [g) Permissions Improvements](#g-permissions-improvements)
-    - [h) Revisit logic for selecting active quarter](#h-revisit-logic-for-selecting-active-quarter)
 - [Roadmap](#roadmap)
-- [Open Questions](#open-questions)
 - [References](#references)
 - [Sprint Retro](#sprint-retro)
   - [What went wrong?](#what-went-wrong)
+  - [What went right?](#what-went-right)
+  - [Process changes](#process-changes)
 
 <span id="statement-of-need"></span>
 ## Statement of need
@@ -262,18 +250,22 @@ The quarter is turned over automatically, we may need to revisit this logic to m
 * Define sprint goals more clearly
 * Improve fogbugz filters for sharing information
 * If tasks are complete work on documentation
-* Feature
-* Project documentation
-* What went right?[edit]
+  * Feature
+  * Project documentation
+
+<span id="what-went-right"></span>
+##### What went right?
 * Sprint went well - stayed on time
 * PO interaction went well
 * Good project to learn ASP.net
 * "Grab Me" worked well
 * Code Review was great.
-* Process changes[edit]
+
+<span id="process-changes"></span>
+##### Process changes
 * Scrum Master should send a reminder out ot add times to work items
 * Cross training on development process
-* Specifically around releasing applications to test or production
+  * Specifically around releasing applications to test or production
 * More Code reviews
 * Add documentation tasks to sprints
 * Add sprint retro notes directly to project and scrum rules pages.
