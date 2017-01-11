@@ -318,5 +318,5 @@ These could be achieved via multiple plugins, but could be one plugin
 * [Studentweb](https://wikiwiki.bellevuecollege.edu/wiki/Studentweb)
 * [Sites+](https://wikiwiki.bellevuecollege.edu/wiki/Sites%2B)
 * [WordPress](https://wikiwiki.bellevuecollege.edu/wiki/WordPress)
-* [Commons](https://wikiwiki.bellevuecollege.edu/wiki/Commons)
+* [Commons](Commons.md)
 
