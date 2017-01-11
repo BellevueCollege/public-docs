@@ -1,10 +1,6 @@
-<span id="data-inventory-and-architecture"></span>
 # Data Inventory & Architecture
 ---
 
-<span id="contents"></span>
-- [Data Inventory & Architecture](#data-inventory-and-architecture)
-- [Contents](#contents)
 - [Statement of need](#statement-of-need)
   - [Problem](#problem)
   - [goal](#goal)
