@@ -129,7 +129,7 @@ Other
 
 <span id="navigation-options"></span>
 #### Navigation options
-* Top navigation (not 'designed' for homesite brand
+* Top navigation (not 'designed' for homesite brand)
 * Left Navigation 
 * No navigation
 
@@ -148,7 +148,7 @@ Display a box floated right within the content space if:
 
 <span id="widget-areas"></span>
 #### Widget areas:
-* Aside (this widget area is after aside content added on a page
+* Aside (this widget area is after aside content added on a page)
 * Sidebar (if there is a sidenav, it shows up after navigation)
 * 3 footer asides
 
@@ -163,7 +163,7 @@ Allow for:
 
 * Base CSS
 * custom css to be used with tiny-MCE advanced plugin
-* Look & Feel is stripped down version of [Btheme](https://wikiwiki.bellevuecollege.edu/index.php?title=Btheme&action=edit&redlink=1).  No college logo/footer (that is added via a plugin
+* Look & Feel is stripped down version of [Btheme](https://wikiwiki.bellevuecollege.edu/index.php?title=Btheme&action=edit&redlink=1).  No college logo/footer (that is added via a plugin)
 * Allow for color scheme switching, such as color / font packages
 * Allow for layout options. 
 * Sitewide layout options
@@ -288,7 +288,7 @@ These could be achieved via multiple plugins, but could be one plugin
 <span id="potential-functionality-built-into-theme"></span>
 #### Potential functionality built into theme
 
-* Defaults to CMS site not blog (or option to easily switch from blog to site
+* Defaults to CMS site not blog (or option to easily switch from blog to site)
 * Needs to be designed to handle blog/cms off the bat
 
 <span id="performance-pluginstools-to-consider"></span>
