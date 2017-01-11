@@ -4,7 +4,7 @@
 - [Questions and Recommendations](#question-and-recommendation)
   - [HA Configuration](#ha-configuration)
   - [VLANs](#vlans)
-  - [Trunks](#trucks)
+  - [Trunks](#truncks)
   - [Storage Configuration](#storage-configuration)
   - [e0M Port](#e0m-port)
   - [Random Errors](#random-error)
@@ -46,7 +46,7 @@ There is no problem configuring interfaces as one large trunk and exposing the c
 [Jonathan Windle](https://wikiwiki.bellevuecollege.edu/wiki/User:Jwindle) 08:11, 11 October 2012 (PDT)
 
 
-<span id="trucks"></span>
+<span id="truncks"></span>
 #### Trunks
 
 Recommend removing trunk configuration for the e0a and e0b interfaces and making them as invisible to the configuration as possible. These are 1GBit interfaces and should probably never be used.
