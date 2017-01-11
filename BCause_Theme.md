@@ -36,7 +36,7 @@
   - [Tables](#tables)
   - [Contact Forms](#contact-forms)
 - [Commons/Studentweb Unique Needs](#commonsstudentweb-unique-needs)
-- [Functionality (may be done via plugins in [Studentweb](https://wikiwiki.bellevuecollege.edu/wiki/Studentweb) and [Sites+](https://wikiwiki.bellevuecollege.edu/wiki/Sites%2B)/[Commons](https://wikiwiki.bellevuecollege.edu/wiki/Commons)](#functionality-may-be-done-via-plugins-in-studentwebhttpswikiwikibellevuecollegeeduwikistudentweb-and-siteshttpswikiwikibellevuecollegeeduwikisitescommonshttpswikiwikibellevuecollegeeduwikicommons)
+- [Functionality](#functionality)
   - [Potential functionality built into theme](#potential-functionality-built-into-theme)
 - [Performance Plugins/tools to consider](#performance-pluginstools-to-consider)
 - [Documentation Plan](#documentation-plan)
