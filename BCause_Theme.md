@@ -316,7 +316,7 @@ These could be achieved via multiple plugins, but could be one plugin
 
 <span id="projects-this-interfaces-with"></span>
 ## Projects this interfaces with
-* [Studentweb](https://wikiwiki.bellevuecollege.edu/wiki/Studentweb)
+* [Studentweb](Studentweb.md)
 * [Sites+](https://wikiwiki.bellevuecollege.edu/wiki/Sites%2B)
 * [WordPress](https://wikiwiki.bellevuecollege.edu/wiki/WordPress)
 * [Commons](Commons.md)
