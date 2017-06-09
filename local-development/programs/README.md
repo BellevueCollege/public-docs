@@ -4,7 +4,7 @@ The Programs Sandbox is an experimental sandbox for use by part-time workers whe
 ## Installation / Setup
 1. Install [Flywheel Local](https://local.getflywheel.com/) *Note: BC is not affiliated with Flywheel*
 2. Allow Flywheel local to install VirtualBox and other resources
-3. Download the [Programs Site Template](programs-sandbox-template.zip) to your computer.
+3. Download the [Programs Site Template](https://github.com/BellevueCollege/public-docs/raw/master/local-development/programs/programs-sandbox-template.zip) to your computer.
 4. From the **File** menu, select **Import Site**
 5. Select the **programs-sandbox-template.zip** you downloaded in step 3
 6. Complete setup
