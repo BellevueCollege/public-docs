@@ -1,2 +1,3 @@
 # Ignore Microsoft Office Temporary Files
 ~*
+.DS_Store
