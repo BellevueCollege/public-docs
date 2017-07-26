@@ -8,7 +8,7 @@ This documentation is based on the [A Successful Git Branching Model]
 ## Step 1: Make sure you don't have any commits left in dev and master branch.
 Make sure the `dev` and `master` branches are up to date with the server.
 
-####PHP application
+#### PHP application
 *Warning:* This will destroy any commits that were not pushed to the git upstream server aliased as *origin*.
 
 ~~~~
@@ -21,7 +21,7 @@ git fetch origin master
 git reset --hard FETCH_HEAD
 ~~~~
 
-####.NET application
+#### .NET application
 
 As .NET applications often have config files specific to local development or other environment artifacts, it is not recommended to do a hard reset, but you can still do a fetch to make sure there are not any upstream changes you don't have in your local git repo.
 
