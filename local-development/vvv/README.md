@@ -4,7 +4,7 @@ Varying Vagrant Vagrants (VVV) is an open source Vagrant configuration focused o
 ##Setup
 
 ####Set Up VVV
-1. [**Install** the latest Virtualbox](https://www.virtualbox.org/wiki/Downloads). Make sure the latest VirtualBox is installed on your machine. 
+1. [**Install** the latest Virtualbox](https://www.virtualbox.org/wiki/Downloads). Make sure the latest VirtualBox is installed on your machine.
 2. [**Install** the latest Vagrant](https://www.vagrantup.com/downloads.html) (v1.9.8 was used for this documentation).
 3. **Install** the following Vagrant plugins with a terminal. *For users on a Windows 8+ machine, only the command prompt is properly supported*:
 	1. Install the [vagrant-hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater) plugin with `vagrant plugin install vagrant-hostsupdater`
