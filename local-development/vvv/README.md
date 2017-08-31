@@ -21,18 +21,23 @@ Varying Vagrant Vagrants (VVV) is an open source Vagrant configuration focused o
 1. Go into the `vvv` folder using a file explorer.
 2. Copy `vvv-config.yml`, paste it in place, and rename it as `vvv-custom.yml`
 3. Open a text editor and uncomment the whole section starting with `#example site:` to be replaced with your site's information. Make sure to include the `wp-type'.
-	* Before:
-			example-site:
-					repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
-					hosts:
-						- my-example-site.dev
-	* After:
-				vvvmultisite:
-                    repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
-                    hosts:
-						- vvvmultisite.local
-					custom:
- 						wp_type: subdirectory
+
+*Before:*
+````
+    example-site:
+        repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
+        hosts:
+            - my-example-site.dev
+````
+*After:*
+````
+    vvvmultisite:
+        repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
+        hosts:
+            - vvvmultisite.local
+        custom:
+            wp_type: subdirectory
+````
 4. Run `vagrant reload --provision` to reload Vagrant, check provisions, and save your site.
 5. Check to make sure http://vvv.dev/ works.
 6. View your site at http://vvvmultisite.local/.
@@ -42,16 +47,20 @@ Varying Vagrant Vagrants (VVV) is an open source Vagrant configuration focused o
 #### If you can't connect to http://vvvmultisite.local/...
 1. Make sure that vvv is listed under hosts in `C:\Windows\System32\drivers\etc\hosts`
 2. Open the `hosts` file in a text editor.
-		192.168.50.4 vvv.dev #Local Site
-		192.168.50.4 vvv #Local Site
-		192.168.50.4 local.wordpress.dev #Local Site
-		192.168.50.4 vvvmultisite.local #Local Site
+````
+    192.168.50.4 vvv.dev #Local Site
+    192.168.50.4 vvv #Local Site
+    192.168.50.4 local.wordpress.dev #Local Site
+    192.168.50.4 vvvmultisite.local #Local Site
+````
 3. Run `vagrant reload --provision`
 
 #### Set Up Mapped Directories
 1. Change into the `vvv` folder and create a new file called `Customfile` using a text editor. Make sure the 'C' is capitalized.
 2. In the file, map your directories like so. Create a new line for each directory:
-		config.vm.synced_folder "/Users/firstname.lastname/Projects/mayflower", "/srv/www/vvvmultisite/public_html/wp-content/themes/mayflower", :owner => "www-data", :mount_options => [ "dmode=775", "fmode=774" ]
+````
+    config.vm.synced_folder "/Users/firstname.lastname/Projects/mayflower", "/srv/www/vvvmultisite/public_html/wp-content/themes/mayflower", :owner => "www-data", :mount_options => [ "dmode=775", "fmode=774" ]
+````
 3. Only change the firstname.lastname and the second link to map the directories as needed.
 4. Run `vagrant reload --provision`
 
