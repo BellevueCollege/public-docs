@@ -12,7 +12,7 @@ This host uses ssh public/private key authentication. If you have not done so al
 To request access to this repository host send the contents of your *public* key file to one or more of the following administrators.
 
 * [Nicole Swan](mailto:nicole.swan@bellevuecollege.edu)
-* [Terrence Adams](mailto:terrence.adams@bellevuecollege.edu)
+* [Taija Tevia-Clark](mailto:taija.tevia-clark@bellevuecollege.edu)
 
 **Note:** Send the *public* key only. If you accidentally send your private key file you will be requested to generate a new key pair starting the process all over again. Don't do this.
 
