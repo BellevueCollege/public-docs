@@ -53,11 +53,7 @@ Make sure to commit your changes to the release branch. A *git status* check sho
 
 **Note for .NET applications:** Again, because of the nature of local .NET application development environments, a git status may not be clean (i.e. you may have an altered web.config that shouldn't be committed, but you don't want to lose changes to).
 
-**Note for projects that use Compass:** Step 3 is the perfect time to compile your Sass/SCSS stylesheets for production. The following command in Compass will output your stylesheets in compressed form:
-
-~~~
-compass compile --output-style compressed --force
-~~~
+**Note for projects that use build processes:** Step 3 is the perfect time to compile your Sass/SCSS stylesheets for production. We primarily use Gulp for this - running simply `gulp` from the command line will compile for production. For plugins that use the Create Guten Blocks framework, run `npm run build` instead. 
 
 ## Step 4: Merge the release branch with master branch
 Now that you got your release branch completed it's time to merge those changes back with *master* so the *master* branch stays current with the latest release.
