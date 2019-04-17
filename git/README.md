@@ -32,9 +32,9 @@ git config --global user.email "your.email@bellevuecollege.edu"
 
 ## Commit Message Style
 
-We use Tim Pope's recommend "50/72 style" for commit messages.
+We use [Tim Pope's recommended "50/72 style"](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) for commit messages.
 
-<http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html>
+
 
 The blog post is fairly informative but the highlights are:
 
@@ -50,11 +50,14 @@ The blog post is fairly informative but the highlights are:
     * Commit message bodies are optional for commit messages
     * Commit message body lines should not exceed 72 characters
 
+### More Dynamic Commit Messages
+* To add some excitement to your commit messages, you can use [Emoji Log style commits 🚀](https://github.com/ahmadawais/Emoji-Log/).
+* If your commit is related to an issue in Jira, you can use [Jira Smart Commits](https://confluence.atlassian.com/bitbucket/processing-jira-software-issues-with-smart-commit-messages-298979931.html) to link your commit to the issue. 
+
 ## Branching Model
 
 We use a branching model based around Vincent Driessen's blog post
-[A successful Git branching model]
-(http://nvie.com/posts/a-successful-git-branching-model/)
+[A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 
 **TODO:** [Git Branching Model Documentation](git-branch-model.md)
 
@@ -64,11 +67,8 @@ We use two repository hosts, a local server running
 [Gitolite](http://gitolite.com/gitolite/) hosted at git.bellevuecollege.edu, and
 [GitHub](https://github.com).
 
-[git.bellevuecollege.edu Documentation]
-(git-host-git.bellevuecollege.edu.md)
-
-[GitHub Documentation]
-(git-host-github.md)
+* [git.bellevuecollege.edu Documentation](git-host-git.bellevuecollege.edu.md)
+* [GitHub Documentation](git-host-github.md)
 
 ## Helpful GUI Clients
 
@@ -78,6 +78,8 @@ of branches and changes.
 
 * [GitHub Application](https://desktop.github.com/) - Cross Platform, GitHub Focused
 * [GitX-dev](http://rowanj.github.io/gitx/) - OSX Client
+* [Visual Studio Code](https://code.visualstudio.com/) has a great built in mergetool to assist with conflicts
+* If you use VS Code, [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) offers a ton of useful tools.
 
 ## Other Documentation
 
