@@ -1,7 +1,6 @@
 # Documenting an Application Release in Git
 
-This documentation is based on the [A Successful Git Branching Model]
-(http://nvie.com/posts/a-successful-git-branching-model/) webpage from the **Release branches** section.
+This documentation is based on the [A Successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/) from the **Release branches** section.
 
 **Note:** This documentation assumes you have not completed a release and are in the early stages of releasing the final product. If you have already released the final product and committed those changes to git seek help as the process will change depending on the situation.
 
