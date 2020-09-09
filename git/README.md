@@ -54,6 +54,20 @@ The blog post is fairly informative but the highlights are:
 * To add some excitement to your commit messages, you can use [Emoji Log style commits 🚀](https://github.com/ahmadawais/Emoji-Log/).
 * If your commit is related to an issue in Jira, you can use [Jira Smart Commits](https://confluence.atlassian.com/bitbucket/processing-jira-software-issues-with-smart-commit-messages-298979931.html) to link your commit to the issue. 
 
+## Branch Names
+
+All Git repositories should have the following two branches at minimum:
+
+* **trunk** - should ALWAYS match what is in production
+* **dev** - code that is currently being developed and tested
+
+### Removing 'Master' terminology
+
+Currently many repositories use a 'Master' and 'Dev' branch system instead of 'Trunk' and 'Dev'.
+The Trunk terminology was decided on to fit with the tree imagery present in Git. GitHub is moving defaults to 'Main', but using 'Trunk' should not cause conflict.
+
+When you update an application, please update branch names if possible. [Directions on updating the Master branch name](rename-git-branch.md).
+
 ## Branching Model
 
 We use a branching model based around Vincent Driessen's blog post
