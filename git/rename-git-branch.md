@@ -20,6 +20,7 @@ Adapted from https://dev.to/rhymu8354/git-renaming-the-master-branch-137b
 
 That's covers it on your end and where your repository is hosted. Now what do you have to do if it's someone else's repo which renamed a branch, and you're left holding a "dangling" reference (so to speak) to a remote branch that no longer exists?
 
+## If Someone Else Renamed the Branch
 If you know the branch was renamed, there's nothing to fear. The following steps will get you back on track:
 
 1. Fetch the latest branches from the remote. `git fetch --all`
