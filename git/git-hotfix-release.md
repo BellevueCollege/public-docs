@@ -40,11 +40,11 @@ Note that the third decimal place is used to denote a hotfix release.
 
 **Example:** *hotfix-v2.5.1*
 
-To create the hotfix branch from the *dev* branch run the following git
+To create the hotfix branch from the *trunk* branch run the following git
 command.
 
 ~~~~
-git checkout -b hotfix-v2.5.1 master
+git checkout -b hotfix-v2.5.1 trunk
 ~~~~
 
 ## Step 3: Commit your bug fixes
@@ -62,12 +62,12 @@ Now that you've got your hotfix branch completed it's time to merge those change
 You can do this by running the following git commands. Don't forget to edit the hotfix branch name to match your own.
 
 ~~~~
-git checkout master
+git checkout trunk
 git merge --no-ff hotfix-v2.5.1
 ~~~~
 
 ## Step 5: Tag the release
-While still in the *master* branch you should create a tag to document the release. The tag name should start with the letter *v* for version followed by the targeted release number. You can create a tag for the release with the following command.
+While still in the *trunk* branch you should create a tag to document the release. The tag name should start with the letter *v* for version followed by the targeted release number. You can create a tag for the release with the following command.
 
 ~~~~
 git tag -a v2.5.1
@@ -105,7 +105,7 @@ git branch -d hotfix-v2.5.1
 
 ~~~~
 git push origin dev
-git push origin master
+git push origin trunk
 git push origin refs/tags/v2.5.1
 ~~~~
 
