@@ -4,8 +4,8 @@ This documentation is based on the [A Successful Git Branching Model](http://nvi
 
 **Note:** This documentation assumes you have not completed a release and are in the early stages of releasing the final product. If you have already released the final product and committed those changes to git seek help as the process will change depending on the situation.
 
-## Step 1: Make sure you don't have any commits left in dev and master branch.
-Make sure the `dev` and `master` branches are up to date with the server.
+## Step 1: Make sure you don't have any commits left in dev and trunk branch.
+Make sure the `dev` and `trunk` branches are up to date with the server.
 
 #### PHP application
 *Warning:* This will destroy any commits that were not pushed to the git upstream server aliased as *origin*.
@@ -15,8 +15,8 @@ git checkout dev
 git fetch origin dev
 git reset --hard FETCH_HEAD
 
-git checkout master
-git fetch origin master
+git checkout trunk
+git fetch origin trunk
 git reset --hard FETCH_HEAD
 ~~~~
 
@@ -28,8 +28,8 @@ As .NET applications often have config files specific to local development or ot
 git checkout dev
 git fetch origin dev
 
-git checkout master
-git fetch origin master
+git checkout trunk
+git fetch origin trunk
 ~~~~
 
 ## Step 2: Create a release branch
@@ -54,18 +54,18 @@ Make sure to commit your changes to the release branch. A *git status* check sho
 
 **Note for projects that use build processes:** Step 3 is the perfect time to compile your Sass/SCSS stylesheets for production. We primarily use Gulp for this - running simply `gulp` from the command line will compile for production. For plugins that use the Create Guten Blocks framework, run `npm run build` instead. 
 
-## Step 4: Merge the release branch with master branch
-Now that you got your release branch completed it's time to merge those changes back with *master* so the *master* branch stays current with the latest release.
+## Step 4: Merge the release branch with trunk branch
+Now that you got your release branch completed it's time to merge those changes back with *trunk* so the *trunk* branch stays current with the latest release.
 
 You can do this by running the following git commands. Don't forget to edit the release branch name to match your own.
 
 ~~~~
-git checkout master
+git checkout trunk
 git merge --no-ff release-v2.5
 ~~~~
 
 ## Step 5: Tag the release
-While still in the *master* branch you should create a tag to document the release. The tag name should start with the letter *v* for version followed by the targeted release number. You can create a tag for the release with the following command.
+While still in the *trunk* branch you should create a tag to document the release. The tag name should start with the letter *v* for version followed by the targeted release number. You can create a tag for the release with the following command.
 
 ~~~~
 git tag -a v2.5
@@ -87,7 +87,7 @@ Updates since v2.4
 ## Step 6: Merge release with the dev branch
 Finally we will want to make sure changes that happened in the release branch
 make it back to the *dev* branch. You will want to merge your release branch
-with the *dev* branch just like you did with *master*.
+with the *dev* branch just like you did with *trunk*.
 
 ~~~~
 git checkout dev
@@ -95,7 +95,7 @@ git merge --no-ff release-v2.5
 ~~~~
 
 ## Step 7: Delete your release branch
-Now that you have merged your release branch back into the *master* and *dev*
+Now that you have merged your release branch back into the *trunk* and *dev*
 branches you can safely discard it with the following command.
 
 ~~~~
@@ -106,7 +106,7 @@ git branch -d release-v2.5
 
 ~~~~
 git push origin dev
-git push origin master
+git push origin trunk
 git push origin refs/tags/v2.5
 ~~~~
 
@@ -115,7 +115,7 @@ While tags will display as releases in GitHub, doing an official GitHub release 
 better display release information, and allow for easier access to release files.
 
 1. Visit GitHub repository, select 'Releases', and select 'Draft new release'
-2. In the 'Tag version' dropdown, select the tag created in Step 5, on the Master branch.
+2. In the 'Tag version' dropdown, select the tag created in Step 5, on the Trunk branch.
 3. In the Release Title, add your tag name (aka 'v2.5')
 4. In the Release Description, place the release notes (contents of the tag you created in Step 5)
 5. If your application has a compiled form neccessary for install, you can upload it under 'Attach Binaries'
