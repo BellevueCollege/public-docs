@@ -1,49 +1,42 @@
 # Documenting an Application Release in Git
 
-This documentation is based on the [A Successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/) from the **Release branches** section.
-
 **Note:** This documentation assumes you have not completed a release and are in the early stages of releasing the final product. If you have already released the final product and committed those changes to git seek help as the process will change depending on the situation.
 
-## Step 1: Make sure you don't have any commits left in dev and trunk branch.
-Make sure the `dev` and `trunk` branches are up to date with the server.
+## Step 0 (before you start): Do Your Development in a Feature Branch, and open Pull Requests into a Release Branch
 
-#### PHP application
-*Warning:* This will destroy any commits that were not pushed to the git upstream server aliased as *origin*.
+See [Git Development Workflow](dev-workflow.md) for details on how to commit your code in preparation for release.
 
-~~~~
-git checkout dev
-git fetch origin dev
-git reset --hard FETCH_HEAD
+In order for this workflow to function, make sure you are doing your development work in a Feature Branch. A Feature Branch is a new Branch in GitHub that is named after the feature you are creating. 
+It is recommended to create your feature branch from the targeted Release branch (if available), or Trunk.
 
-git checkout trunk
-git fetch origin trunk
-git reset --hard FETCH_HEAD
-~~~~
+You can either create a feature branch locally:
 
-#### .NET application
+```bash
+git checkout -b my-cool-feature
+```
 
-As .NET applications often have config files specific to local development or other environment artifacts, it is not recommended to do a hard reset, but you can still do a fetch to make sure there are not any upstream changes you don't have in your local git repo.
+Or you can create it on GitHub:
+1. Open the associated Issue/Task in GitHub Projects
+2. On the sidebar, click Open in New Tab
+3. On the sidebar, under the Development heading, click 'Create a branch for this issue'
+4. In your local environment, checkout the branch and pull
 
-~~~~
-git checkout dev
-git fetch origin dev
-
-git checkout trunk
-git fetch origin trunk
-~~~~
-
-## Step 2: Create a release branch
-Your first step is to create a release branch from the *dev* branch. The
-release branch should be named "*release-v*" followed by the targeted release version number.
+## Step 1: Create a release branch
+The release branch should be created as early as possible; there isn't really an upside to waiting. It should be created from the *trunk* branch.
+The release branch should be named "*release-v*" followed by the targeted release version number.
 
 **Example:** *release-v2.5*
 
-To create the release branch from the *dev* branch run the following git
+To create the release branch from the *trunk* branch run the following git
 command.
 
 ~~~~
-git checkout -b release-v2.5 dev
+git checkout -b release-v2.5 trunk
 ~~~~
+
+Alternativly, you can do this within GitHub in the Branches section.
+
+## Step 2: Open 
 
 ## Step 3: Commit last minute updates
 Now is the time to make any changes that may need to be completed before the release. Usually this only includes bumping the version number to the targeted release version, but could include other small changes including bug fixes.
