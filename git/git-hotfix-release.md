@@ -1,54 +1,25 @@
 # Documenting a Hotfix Release in Git
 
-This documentation is based on the [A Successful Git Branching Model]
-(http://nvie.com/posts/a-successful-git-branching-model/) web page from the **Release branches** section.
-
 **Note:** This documentation assumes you have **not yet committed your bug fix**. If you have already committed your changes, follow the standard release process but use the `hotfix-*` naming convention.
 
-## Step 1: Make sure you don't have any commits left in dev and trunk branch.
-Make sure the `dev` and `trunk` branches are up to date with the server.
 
-### PHP application
-*Warning:* This will destroy any commits that were not pushed to the git upstream server aliased as *origin*.
-
-~~~~
-git checkout dev
-git fetch origin dev
-git reset --hard FETCH_HEAD
-
-git checkout trunk
-git fetch origin trunk
-git reset --hard FETCH_HEAD
-~~~~
-
-### .NET application
-
-As .NET applications often have config files specific to local development or other environment artifacts, it is not recommended to do a hard reset, but you can still do a fetch to make sure there are not any upstream changes you don't have in your local git repo.
-
-~~~~
-git checkout dev
-git fetch origin dev
-
-git checkout trunk
-git fetch origin trunk
-~~~~
-
-## Step 2: Create a hotfix branch
-Your first step is to create a hotfix branch from the *trunk* branch. The hotfix branch should be named "*hotfix-v*" followed by the targeted release version number.
+## Step 1: Create a hotfix branch
+Your first step is to create a hotfix branch from the `trunk` branch. The hotfix branch should be named `hotfix-v` followed by the targeted release version number.
 
 Note that the third decimal place is used to denote a hotfix release.
 
-**Example:** *hotfix-v2.5.1*
+**Example:** `hotfix-v2.5.1`
 
 To create the hotfix branch from the *trunk* branch run the following git
-command.
+commands:
 
-~~~~
+```bash
 git checkout -b hotfix-v2.5.1 trunk
-~~~~
+git push --set-upstream origin hotfix-v2.5.1
+```
 
-## Step 3: Commit your bug fixes
-Now is the time to commit your bug fixes. Make sure you also bump the version number and make any other changes needed before release.
+## Step 2: Commit your bug fixes
+Now is the time to commit your bug fixes to the hotfix branch. Make sure you also bump the version number and make any other changes needed before release.
 
 Use as many commits as needed.
 
@@ -56,66 +27,30 @@ Make sure to commit your changes to the hotfix branch. A *git status* check shou
 
 **Note for .NET applications:** Again, because of the nature of local .NET application development environments, a git status may not be clean (i.e. you may have an altered web.config that shouldn't be committed, but you don't want to lose changes to).
 
-## Step 4: Merge the hotfix branch with trunk branch
-Now that you've got your hotfix branch completed it's time to merge those changes back with *trunk* so the *trunk* branch stays current with the latest release.
+## Step 3: Open a Pull Request from the Hotfix Branch to the Trunk Branch
+Now that you got your release branch completed it's time to merge those changes back with `trunk` via a pull request!
 
-You can do this by running the following git commands. Don't forget to edit the hotfix branch name to match your own.
+1. On github.com, open the repositiory you are working with
+1. Go to the Pull Requests tab
+1. Click 'New pull request'
+1. Set 'base' as `trunk`, and 'compare' as the release branch (aka `hotfix-v1.1.1`), and click 'Create pull request'
+1. Include an informative title, notes on what changed, and set 'Assignees' as yourself
+1. Create pull request
 
-~~~~
-git checkout trunk
-git merge --no-ff hotfix-v2.5.1
-~~~~
+**Repeat Step 3 for any open Release branches!** - we need to make sure this hotfix makes it's way everywhere it needs to go. (More research needed on best practices here!)
+
+## Step 4: Merge the Pull Request
+Approve the pull request, and delete the Hotfix Branch via the GitHub.com interface.
 
 ## Step 5: Tag the release
-While still in the *trunk* branch you should create a tag to document the release. The tag name should start with the letter *v* for version followed by the targeted release number. You can create a tag for the release with the following command.
+1. Go to the repository you are working with on GitHub.com, and click 'Releases' on the right sidebar
+1. Click 'Draft a new release'
+1. Open the 'Choose a tag' menu, type in the version number, starting with a 'v' (aka `v1.1.1`), and choose 'create a new tag'
+1. Title the release the same way
+1. Include notes about what was fixed or changed during the release. You can generate these automatically based on commits by using the 'Generate release notes' button!
+1. Click 'Publish release'
 
-~~~~
-git tag -a v2.5.1
-~~~~
+## Step 6: Deploy to Production
+If a CI/CD tool is being used, this should kick off as soon as the merge to `trunk` is complete. 
 
-After running this command you will be prompted to add a message to the tag. We use this message to capture the changelog from within git. Use the following template to create your changelog message for the tag.
-
-~~~~
-Hotfix release of version 2.5.1
-
-Updates since v2.5
-------------------
-
-* Fixed this
-* Updated that
-* Added this
-~~~~
-
-## Step 6: Merge hotfix with the dev branch
-Finally we will want to make sure changes that happened in the hotfix branch make it back to the *dev* branch. You will want to merge your hotfix branch with the *dev* branch just like you did with *trunk*.
-
-~~~~
-git checkout dev
-git merge --no-ff hotfix-v2.5.1
-~~~~
-
-## Step 7: Delete your hotfix branch
-Now that you have merged your hotfix branch back into the *trunk* and *dev* branches you can safely discard it with the following command.
-
-~~~~
-git branch -d hotfix-v2.5.1
-~~~~
-
-## Step 8: Push changes to server
-
-~~~~
-git push origin dev
-git push origin trunk
-git push origin refs/tags/v2.5.1
-~~~~
-
-## Step 9: Mark tag as GitHub Release (optional)
-
-While tags will display as releases in GitHub, doing an official GitHub release will better display release information, and allow for easier access to release files.
-
-1. Visit GitHub repository, select 'Releases', and select 'Draft new release'
-2. In the 'Tag version' dropdown, select the tag created in Step 5, on the Trunk branch.
-3. In the Release Title, add your tag name (aka 'v2.5')
-4. In the Release Description, place the release notes (contents of the tag you created in Step 5)
-5. If your application has a compiled form neccessary for install, you can upload it under 'Attach Binaries'
-6. Publish Release
+Otherwise, deploy to production manually as soon as you are done - the `trunk` branch should always match production!
