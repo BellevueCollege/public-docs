@@ -10,6 +10,11 @@ about git there are many good online resources, a few of which are listed below.
 * [Git Learning Videos](https://git-scm.herokuapp.com/videos)
 * [Git Reference Documentation](https://git-scm.herokuapp.com/docs)
 
+## Recommended Workflow
+- [Developer Workflow](dev-workflow.md) - [Diagram of Workflow](dev-workflow.png)
+- [Documenting an Application Release in Git](git-application-release.md)
+- [Documenting a Hotfix Release in Git](git-hotfix-release.md)
+
 ## Installation
 
 Git supports multiple platforms. Downloads and be found from the [official
@@ -90,4 +95,3 @@ of branches and changes.
 
 [Generate a SSH Key Pair for Authentication](ssh-generate-key-pair.md)
 
-[Documenting an Application Release in Git](git-application-release.md)
