@@ -20,8 +20,8 @@ To be granted elevated access to GitHub you must have an GitHub account. If you 
 After creating your account, send your username to one of the following
 administrators.
 
-* [Eden Lasater](mailto:eden.lasater@bellevuecollege.edu)
-* [Nicole Swan](mailto:nicole.swan@bellevuecollege.edu)
+* Taija Tevia-Clark
+* Elizabeth Fuenzalida
 
 ## SSH Key Pair Authentication
 

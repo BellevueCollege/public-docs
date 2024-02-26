@@ -10,6 +10,11 @@ about git there are many good online resources, a few of which are listed below.
 * [Git Learning Videos](https://git-scm.herokuapp.com/videos)
 * [Git Reference Documentation](https://git-scm.herokuapp.com/docs)
 
+## Recommended Workflow
+- [Developer Workflow](dev-workflow.md) - [Diagram of Workflow](dev-workflow.png)
+- [Documenting an Application Release in Git](git-application-release.md)
+- [Documenting a Hotfix Release in Git](git-hotfix-release.md)
+
 ## Installation
 
 Git supports multiple platforms. Downloads and be found from the [official
@@ -17,7 +22,6 @@ website](https://git-scm.com/).
 
 * [Windows Installation](git-installation-windows.md)
 * [OS X Installation](git-installation-osx.md)
-* **TODO:** [Linux Installation](git-installation-linux.md)
 
 ## Setting Author Information
 
@@ -33,8 +37,6 @@ git config --global user.email "your.email@bellevuecollege.edu"
 ## Commit Message Style
 
 We use [Tim Pope's recommended "50/72 style"](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) for commit messages.
-
-
 
 The blog post is fairly informative but the highlights are:
 
@@ -52,14 +54,12 @@ The blog post is fairly informative but the highlights are:
 
 ### More Dynamic Commit Messages
 * To add some excitement to your commit messages, you can use [Emoji Log style commits 🚀](https://github.com/ahmadawais/Emoji-Log/).
-* If your commit is related to an issue in Jira, you can use [Jira Smart Commits](https://confluence.atlassian.com/bitbucket/processing-jira-software-issues-with-smart-commit-messages-298979931.html) to link your commit to the issue. 
 
 ## Branch Names
 
-All Git repositories should have the following two branches at minimum:
+All Git repositories should have the following branch at minimum:
 
 * **trunk** - should ALWAYS match what is in production
-* **dev** - code that is currently being developed and tested
 
 ### Removing 'Master' terminology
 
@@ -68,20 +68,16 @@ The Trunk terminology was decided on to fit with the tree imagery present in Git
 
 When you update an application, please update branch names if possible. [Directions on updating the Master branch name](rename-git-branch.md).
 
-## Branching Model
+### The 'Dev' branch
 
-We use a branching model based around Vincent Driessen's blog post
-[A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
-
-**TODO:** [Git Branching Model Documentation](git-branch-model.md)
+Currently many responsitories still use the 'git flow' based workflow, which depends on a Dev and Trunk branch instead of using a pull-request based workflow. 
+It is recommended to switch over to the GitHub Flow + Releases workflow instead.
 
 ## Repository Hosts
 
-We use two repository hosts, a local server running
-[Gitolite](http://gitolite.com/gitolite/) hosted at git.bellevuecollege.edu, and
-[GitHub](https://github.com).
+We use one repository host:
+- [GitHub](https://github.com/bellevuecollege)
 
-* [git.bellevuecollege.edu Documentation](git-host-git.bellevuecollege.edu.md)
 * [GitHub Documentation](git-host-github.md)
 
 ## Helpful GUI Clients
@@ -99,4 +95,3 @@ of branches and changes.
 
 [Generate a SSH Key Pair for Authentication](ssh-generate-key-pair.md)
 
-[Documenting an Application Release in Git](git-application-release.md)
