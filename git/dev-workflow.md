@@ -5,6 +5,8 @@ As of December 2023, the recommended developer workflow has changed from 'git fl
 This workflow is focused on Pull Requests, which you can initiate easily from within GitHub. A Pull Request documents that you are ready to move your code into production, and allows that code
 to be tested before it is released. This is particularly easy when things are configured for continuous integration and delivery.
 
+GitHub has a great interactive course that you can use to practice this process: [GitHub Skills Course: Release Based Workflow](https://github.com/skills/release-based-workflow)
+
 ## The Essential Workflow:
 1. Create a **Release Branch** from `trunk` as soon as you start planning a release. Naming should be `release-vX.X.X` or `hotfix-vX.X.X`, using the targeted version number.
 1. Create a **Feature Branch** from the release branch (or `trunk`) as soon as you start working on a feature/issue. It should be named something related to the issue, and not use 'release' or 'hotfix' in the name.
